@@ -35,7 +35,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="textPersonName|number"
                 android:ems="10"
                 android:id="@+id/et_latitud"
                 android:hint="Introduzca la latitud"
@@ -60,13 +60,13 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="textPersonName"
                 android:ems="10"
                 android:id="@+id/et_longitud"
                 android:hint="Introduzca la longitud"
                 android:textAlignment="textStart"
                 android:layout_weight="1"
-                android:paddingLeft="10dp" />
+                android:paddingLeft="10dp"
+                android:inputType="textPersonName|number" />
 
         </LinearLayout>
 
