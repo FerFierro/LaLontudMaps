@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -18,49 +19,82 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="11dp">
 
-        <TextView
-            android:text="Latitud:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_latitud"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-        <EditText
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/et_latitud"
-            android:hint="Introduzca la latitud"
-            android:textAlignment="center" />
+            android:layout_height="50dp"
+            android:weightSum="1">
 
-        <TextView
-            android:text="Longitud:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_longitud"
-            android:layout_marginTop="15dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            <ImageView
+                android:id="@+id/iv_latitud"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_latitud" />
 
-        <EditText
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/et_latitud"
+                android:hint="Introduzca la latitud"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/et_longitud"
-            android:hint="Introduzca la longitud"
-            android:textAlignment="center" />
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/iv_longitud"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_longitud" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/et_longitud"
+                android:hint="Introduzca la longitud"
+                android:textAlignment="textStart"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
 
         <Button
             android:text="Enviar Datos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_enviar_datos" />
+            android:id="@+id/btn_enviar_datos"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/tv_resultado" />
+            android:id="@+id/tv_resultado"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryLight"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:padding="16dp" />
     </LinearLayout>
 
 </RelativeLayout>

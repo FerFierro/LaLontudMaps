@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (resultJSON.length()>0){
                         direccion = resultJSON.getJSONObject(0).getString("formatted_address");    // dentro del results pasamos a Objeto la seccion formated_address
                     }
-                    devuelve = "Dirección: " + direccion;   // variable de salida que mandaré al onPostExecute para que actualice la UI
+                    devuelve = "Los datos corresponden a la dirección: " + direccion;   // variable de salida que mandaré al onPostExecute para que actualice la UI
 
 
 
